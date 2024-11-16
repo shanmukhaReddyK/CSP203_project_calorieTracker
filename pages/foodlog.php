@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
    
     $conn = new mysqli("localhost", "root", "", "calorie_tracker");
     if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
+        die("Connectio failed: " . $conn->connect_error);
     }
 
     $stmt = $conn->prepare("INSERT INTO calories (type, calories, protein, fiber, carbs) VALUES ('food', ?, ?, ?, ?)");
