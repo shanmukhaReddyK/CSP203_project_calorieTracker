@@ -1,3 +1,10 @@
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
 ul {
     list-style-type: none;
     display: flex;
@@ -8,4 +15,12 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+div {
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
 }
