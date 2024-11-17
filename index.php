@@ -5,6 +5,14 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+$current_date = date('Y-m-d');
+if (!isset($_SESSION['last_reset']) || $_SESSION['last_reset'] !== $current_date) {
+    // Clear old data
+    $conn->query("DELETE FROM calories WHERE logged_at < CURDATE()");
+
+    // Update the session variable
+    $_SESSION['last_reset'] = $current_date;
+}
 
 $result = $conn->query("SELECT 
     SUM(CASE WHEN type = 'food' THEN calories ELSE 0 END) AS total_food,
