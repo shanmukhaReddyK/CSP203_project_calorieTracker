@@ -9,9 +9,9 @@
 1. ->provide a ideal goal calories intake based on the the goal that user wants to achieve.
 
 > [!IMPORTANT]
-> to reset data each you have to use the commands below \\
- 1. -> crontab -e
- 1. ->0 0 * * * php /path/to/your/project/reset_data.php  (Replace /path/to/your/project/ with the actual path to the files)
+> to reset data each you have to use the commands below 
+> 1. -> crontab -e
+> 1. ->0 0 * * * php /path/to/your/project/reset_data.php  (Replace /path/to/your/project/ with the actual path to the files)
  
 
 
