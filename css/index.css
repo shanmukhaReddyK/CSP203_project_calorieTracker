@@ -1,10 +1,6 @@
-.topnav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    padding-left: 200px;
-    padding-right: 200px;
+h1 {
+    text-align: center;
+    color: rgb(0, 170, 255);
 }
 
 .bentobox {
@@ -18,19 +14,16 @@ ul {
     display: flex;
     margin: 0px;
     padding: 0px;
-    gap: 8px;
+    gap: 40px;
 }
 
 a {
     text-decoration: none;
 }
 
-div {
-    padding: 10px;
-}
-
-h1 {
-    text-align: center;
+.topnav , .bentobox{
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 .bentonav {

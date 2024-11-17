@@ -44,12 +44,10 @@ $conn->close();
 
 <body>
 
- <h1>Calorie Tracker</h1>
 
-    <div class="topnav">
-        <div class="logo"><img src="./logos/daily.png" alt="dailyCAl"></div>
-        <div class="right">profile</div>  
-    </div>
+    
+       <h1>dailycal</h1> 
+   
 
     <div class="bentobox">
         <div class="trackerdisplay">

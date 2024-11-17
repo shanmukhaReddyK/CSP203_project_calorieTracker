@@ -25,12 +25,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log Workout</title>
+    <link rel="stylesheet" href="../css/workout.css">
 </head>
 <body>
     <h1>Log Workout</h1>
     <form method="POST">
         <label for="calories">Calories Burned:</label>
-        <input type="number" name="calories" id="calories" required>
+        <input type="number" name="calories" id="calories" required><br>
         <button type="submit">Log Workout</button>
     </form>
     <a href="../index.php">Back to Home</a>

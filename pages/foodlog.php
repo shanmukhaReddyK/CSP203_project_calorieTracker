@@ -28,6 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log Food</title>
+    <link rel="stylesheet" href="../css/foodlog.css">
 </head>
 <body>
     <h1>Log Food</h1>
