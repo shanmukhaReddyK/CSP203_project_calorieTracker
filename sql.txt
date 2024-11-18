@@ -1,0 +1,16 @@
+-- Create the database
+CREATE DATABASE IF NOT EXISTS calorie_tracker;
+
+-- Use the database
+USE calorie_tracker;
+
+-- Create the calories table
+CREATE TABLE IF NOT EXISTS calories (
+    id INT AUTO_INCREMENT PRIMARY KEY,             -- Unique identifier for each entry
+    type ENUM('food', 'workout') NOT NULL,         -- Type of entry: 'food' or 'workout'
+    calories INT NOT NULL,                         -- Calories logged
+    protein INT DEFAULT NULL,                      -- Protein in grams (optional)
+    fiber INT DEFAULT NULL,                        -- Fiber in grams (optional)
+    carbs INT DEFAULT NULL,                        -- Carbs in grams (optional)
+    logged_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP  -- Timestamp of when the entry was created
+);
